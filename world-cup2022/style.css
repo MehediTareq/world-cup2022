@@ -1,0 +1,360 @@
+@import url('https://fonts.googleapis.com/css2?family=Gentium+Book+Plus&family=Inter:wght@700&family=Lobster&family=M+PLUS+2&family=Montserrat&family=Nunito&family=Oswald:wght@500;700&family=Poppins:wght@400;500&family=Praise&family=Satisfy&family=Shippori+Antique&family=Source+Sans+Pro:wght@700&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.top-banner {
+    width: 1300px;
+    margin: 0 auto;
+    height: 646px;
+    background-image: linear-gradient(90deg, black, grey);
+    background-blend-mode: overlay;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: white;
+    border-radius: 30px;
+    padding: 20px;
+}
+
+.top-banner-left {
+    width: 531px;
+    height: 410px;
+}
+
+.top-banner-title {
+    font-size: 40px;
+    font-weight: 700;
+}
+
+@keyframes example {
+    from {
+        background-color: black;
+    }
+
+    to {
+        background-color: gray;
+    }
+}
+
+/* The element to apply the animation to */
+.top-banner {
+    animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+.top-banner-description {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.btn {
+    font: 22px Arial;
+    display: inline-block;
+    padding: 20px 40px;
+    text-align: center;
+    color: black;
+    background: linear-gradient(to left, white 50%, brown 50%) right;
+    background-size: 200%;
+    transition: .5s ease-out;
+    border: none;
+}
+
+.btn:hover {
+    background-position: left;
+}
+
+.btn i {
+    font-size: 15px;
+    margin-left: 5px;
+}
+
+.top-banner-right {
+    width: 581px;
+    height: 613px;
+}
+
+.top-banner-right img {
+    margin-top: 36px;
+    width: 581px;
+}
+
+.all-matches {
+    margin-top: 130px;
+    display: flex;
+    margin-bottom: 130px;
+}
+
+#blog {
+    background-color: purple;
+    color: white;
+}
+
+.all-matches-left {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 312px;
+    height: 312px;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+
+.all-matches-left a {
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    width: 242px;
+    height: 84px;
+    margin: 20px;
+    text-align: center;
+    border-radius: 10px;
+    padding: 10px;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.all-matches-right {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
+    flex-grow: 1;
+}
+
+.matches {
+    width: 312px;
+    height: fit-content;
+    border: 1px solid rgb(197, 193, 193);
+    border-radius: 10px;
+}
+
+.upcoming {
+    padding: 10px 0;
+    text-align: center;
+}
+
+.flags {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.matches-info {
+    padding: 5px 10px;
+}
+
+.transfer-btn {
+    font-weight: 500;
+    font-size: 16px;
+    width: 87px;
+    height: 30px;
+}
+
+.all-matches-info {
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.view-all {
+    width: 1320px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.view {
+    width: 150px;
+    padding: 15px 25px;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#viewAll {
+    display: none;
+}
+
+
+.footer {
+    width: 100%;
+    min-height: 444px;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.goal {
+    font-size: 40px;
+    font-weight: 600;
+}
+
+hr {
+    color: gray;
+    width: 80%;
+    margin: 50px;
+    opacity: .3;
+}
+
+.links small {
+
+    margin-right: 10px;
+    font-size: 12px;
+    font-weight: 500;
+    color: rgba(185, 185, 185, 1);
+}
+
+.time-comment {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.time {
+    margin: 10px 15px 10px 0;
+}
+
+.time i {
+    margin-right: 10px;
+}
+
+.social-links i {
+    margin: 20px 10px 0 0;
+    font-size: 25px;
+    color: white;
+}
+
+/* -----------Media Query------- 
+---------------------------------*/
+
+
+/* Tab View */
+@media screen and (max-width:992px) and (min-width:689px) {
+
+    .top-banner {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        height: 1000px;
+        padding: 2%;
+    }
+
+    .all-matches {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .all-matches-left {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        width: 100%;
+        text-align: center;
+        height: 312px;
+        border-radius: 10px;
+        margin-right: 20px;
+        margin-bottom: 10px;
+    }
+
+    .all-matches-right {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+
+    #viewAll {
+        display: block;
+        display: flex;
+        justify-content: center;
+        margin-left: 350px;
+    }
+
+    #match-nine {
+        display: none;
+    }
+
+    .footer {
+        height: 300px;
+    }
+}
+
+/* Mobile View */
+@media screen and (max-width:688px) {
+
+    .top-banner {
+        display: flex;
+        flex-direction: column;
+        height: fit-content;
+        width: 630px;
+        overflow: hidden;
+    }
+
+    .top-banner-right img {
+        width: 50%;
+    }
+
+    .top-banner-description {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .all-matches {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .all-matches-left {
+        background-color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        height: 312px;
+        border-radius: 10px;
+        margin-right: 20px;
+        margin-bottom: 10px;
+    }
+
+    .all-matches-right {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 10px;
+    }
+
+    .links {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .links small {
+        margin-top: 10px;
+    }
+
+    .social-links {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        margin-bottom: 5px;
+    }
+
+}
